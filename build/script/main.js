@@ -1,0 +1,1 @@
+function dividir(i,d){return i/d}console.log(dividir(15,3));

@@ -22,6 +22,4 @@ function comprimeSass(){
         .pipe(gulp.dest('./build/styles'))
 }
 
-exports.sass = comprimeSass
-exports.imagem = comprimeImagem
-exports.js = comprimirJs
+exports.default = gulp.series(comprimeImagem, comprimeSass, comprimirJs);
